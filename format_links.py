@@ -1,23 +1,3 @@
-# def format_links_as_string(links, delimiter=" | "):
-#     formatted_links = " | ".join(f"{link}" for link in links)
-#     return formatted_links
-
-
-# def main():
-#     links = []
-#     while True:
-#         link = input("Enter Link: (press Enter with blank input when finished)\n")
-#         if not link:
-#             break
-#         links.append(link)
-
-#     formatted_string = format_links_as_string(links)
-#     print("Formatted Links: ")
-#     print(formatted_string)
-
-
-# if __name__ == "__main__":
-#     main()
 def format_links_as_string(links, delimiter=" | "):
     formatted_links = " | ".join(f"{link.strip()}" for link in links)
     return formatted_links
