@@ -3,6 +3,9 @@ def extract_links(input_string):
     return links
 
 
+# for git
+
+
 def write_to_file(links, output_file):
     with open(output_file, "w") as file:
         for link in links:
