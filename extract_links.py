@@ -2,10 +2,6 @@ def extract_links(input_string):
     links = input_string.split(" | ")
     return links
 
-
-# for git
-
-
 def write_to_file(links, output_file):
     with open(output_file, "w") as file:
         for link in links:
@@ -13,7 +9,7 @@ def write_to_file(links, output_file):
 
 
 if __name__ == "__main__":
-    input_file = "raw.txt"
+    input_file = "raw.txt" # Modify to whatever your input file is
     output_file = "extracted.txt"  # Set the output file name
 
     try:

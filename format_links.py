@@ -1,5 +1,5 @@
-def format_links_as_string(links, delimiter=" | "):
-    formatted_links = " | ".join(f"{link.strip()}" for link in links)
+def format_links_as_string(links, delimiter): 
+    formatted_links = delimiter.join(f"{link.strip()}" for link in links)
     return formatted_links
 
 
@@ -11,7 +11,7 @@ def main():
         print("Error: The 'links.txt' file was not found.")
         return
 
-    formatted_string = format_links_as_string(links)
+    formatted_string = format_links_as_string(links, ",")
     print("Formatted Links:")
     print(formatted_string)
 
